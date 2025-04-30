@@ -1,0 +1,201 @@
+.mobile-nav-toggle {
+    display: none;
+  }
+  
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+  
+  .navmenu ul {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+  
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 15px 10px;
+    font-family: var(--nav-font);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .navmenu a .navicon,
+  .navmenu a:focus .navicon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .navmenu a .toggle-dropdown,
+  .navmenu a:focus .toggle-dropdown {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    flex-shrink: 0;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+  
+  .navmenu a .toggle-dropdown:hover,
+  .navmenu a:focus .toggle-dropdown:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+  
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+  
+  .navmenu a:hover .navicon,
+  .navmenu .active .navicon,
+  .navmenu .active:focus .navicon {
+    color: var(--accent-color);
+  }
+  
+  .navmenu .active .toggle-dropdown,
+  .navmenu .active:focus .toggle-dropdown {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+  
+  .navmenu .dropdown {
+    display: block;
+  }
+  
+  .navmenu .dropdown a,
+  .navmenu .dropdown a:focus {
+    color: --nav-dropdown-color;
+  }
+  
+  .navmenu .dropdown a:hover,
+  .navmenu .dropdown .active,
+  .navmenu .dropdown .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+  
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+  
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+
+
+  .photobox{
+    max-width: 85%;
+    margin:10px auto;
+  }
+  
+  .photobox .photobox-container{
+    columns:3 150px;
+    gap:5px;
+  }
+  
+  .photobox .photobox-container img{
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  @media (max-width: 1280px){
+    .photobox{
+      max-width: 85%;
+      margin:5px auto;
+    }
+  
+    .photobox .photobox-container{
+      columns:3 150px;
+      gap: 5px;
+    }
+  
+    .photobox .photobox-container img{
+      margin-bottom: 5px;
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .photobox{
+      max-width: 85%;
+      margin:5px auto;
+    }
+  
+    .photobox .photobox-container{
+      columns:2 150px;
+      gap: 5px;
+    }
+  
+    .photobox .photobox-container img{
+      margin-bottom: 5px;
+      border-radius: 5px;
+      width: 100%;
+    }
+  }  
+
+  .header-photo{
+    background: linear-gradient(rgba(11, 11, 11, 0.851), rgb(59, 0, 0)), url(../img/WhatsApp\ Image\ 2025-04-30\ at\ 13.44.54_aee1c9d3.jpg);
+    background-size: cover;
+    background-position: 5%;
+    background-attachment: fixed;
+  }
+
+  .sound-cover{
+    background: linear-gradient(rgba(11, 11, 11, 0.851), rgba(5, 2, 2, 0.622)), url(../img/Screenshot\ 2025-04-30\ 200455.png);
+    background-size: cover;
+  }
+  .sound-cover1{
+    background: linear-gradient(rgba(11, 11, 11, 0.851), rgba(5, 2, 2, 0.622)), url(../img/houseoflord.png);
+    background-size: cover;
+  }
+  .sound-cover2{
+    background: linear-gradient(rgba(11, 11, 11, 0.452), rgba(5, 2, 2, 0.359)), url(../img/bif.png);
+    background-size: cover;
+  }
+
+  .video-cover{
+    background: linear-gradient(rgba(11, 11, 11, 0.452), rgba(5, 2, 2, 0.359)), url(../img/asa.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-cover1{
+    background: linear-gradient(rgba(11, 11, 11, 0.452), rgba(5, 2, 2, 0.359)), url(../img/bifgvid.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .video-cover2{
+    background: linear-gradient(rgba(11, 11, 11, 0.452), rgba(5, 2, 2, 0.359)), url(../img/welcome.png);
+    background-size: cover;
+    background-position: center;
+  }
