@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Daramola</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./assets/css/daramola.css">
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -18,25 +23,25 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
-<body class="w3-black">
+<body class="w3-white">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="w3-sidebar bg-black border-end w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="C:\Users\timi\Downloads\WhatsApp Image 2025-04-24 at 11.19.01 PM.jpeg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <img src="./assets/img/user.jpg" class="rounded-5 mb-2 mt-2 border border-dark" style="width:50%">
+  <a href="#" class="w3-bar-item btn w3-hover-white text-light active">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-bar-item btn text-light w3-hover-white">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#photos" class="w3-bar-item btn text-light w3-hover-white">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>COLLECTED WORKS</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#contact" class="w3-bar-item btn text-light w3-hover-white">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -53,80 +58,187 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<div class="" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+  <header class="container-fluid text-center py-5 w3-black header-photo" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Timilehin Daramola.</h1>
-    <p>Photographer.</p>
-    <img src="C:\Users\timi\Downloads\WhatsApp Image 2025-04-24 at 11.19.01 PM.jpeg"alt="me" class="w3-image" width="200" height="360">
+    <p>Photographer, videographer & Sound designer</p>
+    <!--<img src="./assets/img/WhatsApp Image 2025-04-30 at 13.44.54_aee1c9d3.jpg"alt="me" class="w3-image" width="200" height="360">-->
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Who am I?</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Timi Daramola is a Sophomore Audio video media production  major at Howard community college . His passion for filmmaking, sound design, writing and storytelling come from his desire to communicate ideas to large audiences and effect change in creative and political spheres. He wrote and directed his first short film in partnership with his friend from boarding school. In all of his creative endeavors, Timi attempts to tie in his previous life experiences. An immigrant from Nigeria, Timi arrived in America in late 2022 after living in his home nation for the first 17 years of his life. Timi’s father is a psychiatrist, because of this Timi was often exposed to many of his father’s patients who captivated him with their ideas, stories and demeanors as a whole, this pushed him to tell stories rivalling those he heard at 5 years old. Outside of school and art he is passionate about his native Yoruba culture, and the different precolonial cultures in sub-Saharan Africa. Timi aims to continue his education in media studies and create art that makes an impact
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <p class="w3-wide">Web Design</p>
-    <p class="w3-wide">Photoshop</p>
-        <p class="w3-wide">Video Editing</p>
-            <p class="w3-wide">Sound design</p>
-                <p class="w3-wide">Script Writing</p>
-                    <p class="w3-wide">Photoshop</p>
+   <!--<section class="p-3">
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="text-dark fw-bolder">Who am I?</h2>
+      <hr style="width:200px; height:5px;" class="w3-opacity">
+      <p>Timi Daramola is a Sophomore Audio video media production  major at Howard community college . His passion for filmmaking, sound design, writing and storytelling come from his desire to communicate ideas to large audiences and effect change in creative and political spheres. He wrote and directed his first short film in partnership with his friend from boarding school. In all of his creative endeavors, Timi attempts to tie in his previous life experiences. An immigrant from Nigeria, Timi arrived in America in late 2022 after living in his home nation for the first 17 years of his life. Timi’s father is a psychiatrist, because of this Timi was often exposed to many of his father’s patients who captivated him with their ideas, stories and demeanors as a whole, this pushed him to tell stories rivalling those he heard at 5 years old. Outside of school and art he is passionate about his native Yoruba culture, and the different precolonial cultures in sub-Saharan Africa. Timi aims to continue his education in media studies and create art that makes an impact
+      </p>
+      <h3 class="w3-padding-16 text-dark fw-bold">Skills</h3>
+      <p class="w3-wide">Photography</p>
+      <p class="w3-wide">Photoshop</p>
+          <p class="w3-wide">Video Editing</p>
+              <p class="w3-wide">Sound design</p>
+                  <p class="w3-wide">Script Writing</p>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="C:\Users\timi\Downloads\Timilehin_Daramola_Resume.pdf" download class="w3-button w3-light-grey w3-padding-large w3-section">
-  <i class="fa fa-download"></i> Download Resume
-</a>
+      <button class="btn border shadow p-3">
+        <a href="resume.pdf" download class="text-dark" style="text-decoration: none;">
+            <i class="fa fa-download"></i> Download Resume
+        </a>
+      </button>
 
-    </button>
+    <-- End About Section --
+    </div>-->
+  </section>
+  <section class="border rounded-4 shadow-lg my-3 m-2">
+    <div class="container" id="about">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="./assets/img/WhatsApp Image 2025-04-30 at 13.44.54_aee1c9d3.jpg" class="img-fluid w-100 rounded" alt="">
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="700" class="col-lg-6 madeline-survey-text">
+                    <div class="py-4">
+                        <h2 class="text-dark fw-bolder">Who am I?</h2>
+                        <hr style="width:200px; height:5px;" class="w3-opacity">
 
+                        <p mb-4 text-dark>
+                          Timi Daramola is a Sophomore Audio video media production  major at Howard community college . His passion for filmmaking, sound design,
+                           writing and storytelling come from his desire to communicate ideas to large audiences and effect change in creative and political spheres.
+                           He wrote and directed his first short film in partnership with his friend from boarding school. In all of his creative endeavors, Timi
+                           attempts to tie in his previous life experiences. An immigrant from Nigeria, Timi arrived in America in late 2022 after living in his home
+                           nation for the first 17 years of his life. Timi’s father is a psychiatrist, because of this Timi was often exposed to many of his father’s
+                           patients who captivated him with their ideas, stories and demeanors as a whole, this pushed him to tell stories rivalling those he heard at
+                           5 years old. Outside of school and art he is passionate about his native Yoruba culture, and the different precolonial cultures in sub-Saharan
+                           Africa. Timi aims to continue his education in media studies and create art that makes an impact
+                        </p>
 
-  <!-- End About Section -->
-  </div>
+                        <h3 class="w3-padding-16 text-dark fw-bold">Skills</h3>
+                          <p class="w3-wide fw-semibold">Photography</p>
+                          <p class="w3-wide fw-semibold">Photoshop</p>
+                          <p class="w3-wide fw-semibold">Video Editing</p>
+                          <p class="w3-wide fw-semibold">Sound design</p>
+                          <p class="w3-wide fw-semibold">Script Writing</p>
+                        <button class="btn border shadow p-3 mt-3 w-100">
+                          <a href="resume.pdf" download class="text-dark" style="text-decoration: none;">
+                              <i class="fa fa-download"></i> Download Resume
+                          </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Work</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h1 class="text-dark fw-bold">My Work</h1>
+    <hr style="width:250px;" class="w3-opacity">
+    <hr style="width:200px; height: 10px; color: black;" class="w3-opacity">
 
+    <h5 class="text-dark text-center fw-bold mt-3">Photography</h5>
+    <hr style="width:200px text-center" class="w3-opacity">
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="photobox">
+      <div class="photobox-container">
+          <img src="./assets/img/weLcomeTOBROckton.jpg" alt="">
+          <img src="./assets/img/brockneverwhatitseems.jpg" alt="">
+          <img src="./assets/img/Blob Text 2.png" alt="">
+          <img src="./assets/img/TVTVTV.jpg" alt="">
+          <img src="./assets/img/Motion Blur and Nice Font-Recovered.png" alt="">
+          <img src="./assets/img/Nimic-01.png" alt="">
+          <img src="./assets/img/Closed Test 01-01.png" alt="">
+          <img src="./assets/img/Blob Text 1.png" alt="">
+          <img src="./assets/img/welcometototototobrockton.jpeg" alt="">
+    </div>
+    <!--<div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\Blob Text 1.png"style="width:100%">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\Blob Text 2.png"style="width:100%">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\Motion Blur and Nice Font-Recovered.png" style="width:100%">
+        <img src="./Portfolio/Blob Text 1.png"style="width:100%">
+        <img src="./Portfolio/Blob Text 2.png"style="width:100%">
+        <img src="./Portfolio/Motion Blur and Nice Font-Recovered.png" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\Nimic-01.png" style="width:100%">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\welcometototototobrockton.jpeg" style="width:100%">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\weLcomeTOBROckton.jpg" style="width:100%">
-        <img src="C:\Users\timi\Documents\GitHub\odaramol8061.github.io\Portfolio\Closed Test 01-01.png" style="width:100%">
+        <img src="./Portfolio/Nimic-01.png" style="width:100%">
+        <img src="./Portfolio/welcometototototobrockton.jpeg" style="width:100%">
+        <img src="./Portfolio/weLcomeTOBROckton.jpg" style="width:100%">
+        <img src="./Portfolio/Closed Test 01-01.png" style="width:100%">
       </div>
-    <!-- End photo grid -->
+     End photo grid
+    </div>-->
+
+    <h5 class="text-dark text-start fw-bold mt-3">Sound Design</h5>
+    <hr style="width:200px text-center" class="w3-opacity">
+    <div class="container text-center">
+      <div class="row g-2">
+        <div class="col-6 border sound-cover1 rounded-3">
+          <div class="p-3">
+            <a href="https://soundcloud.com/user-987666238/house-of-lords-musique-concrete-experiment?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=a00fe5d508dc40138296a7fac61c6351">
+          <button class="btn text-light fw-bolder">House Of Lords</button></a>
+          </div>
+        </div>
+        <div class="col-6 border sound-cover rounded-3">
+          <div class="p-3">
+            <a href="https://soundcloud.com/user-987666238/never-let-you-go-short-podcast?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=93e6831fe851414aaceecc82f9204035">
+              <button class="btn text-light fw-bolder">Podcast</button></a>
+          </div>
+        </div>
+        <div class="col-6 border sound-cover2 rounded-3">
+          <div class="p-3">
+            <a href="https://youtu.be/hoTTYg7R_8s?si=ivQHXNaZll4dZRiV">
+              <button class="btn text-light fw-bolder">BIFSC Sound</button></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- end of sound design -->
+
+    <h5 class="text-dark text-end fw-bold mt-3">VideoGraphy</h5>
+    <hr style="width:200px text-center" class="w3-opacity">
+    <div class="container text-center">
+      <div class="row g-3">
+        <div class="col-6 video-cover rounded-4 py-3">
+          <a href="https://youtu.be/vjr9fV2o8mE?si=D374xh9aEH3ai38x" style="text-decoration: none;">
+            <div class="p-2 py-5 text-light fw-bolder fs-4">
+            Asa Promo Video
+          </div>
+          </a>
+        </div>
+        <!--<div class="col-6 video-cover1 rounded-4 border py-3">
+          <div class="p-2 py-5 text-light fw-bolder fs-4">
+            BIFSC Design
+          </div>
+        </div>-->
+        <div class="col-6 video-cover2 rounded-4 border py-3">
+          <a href="https://youtu.be/ZuN8J_h1WOY?si=rqqMH8pQ07sTuZ7Z" style="text-decoration: none;">
+            <div class="p-2 py-5 text-light fw-bolder fs-4">
+            Welcome To Brockton
+          </div>
+           </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of videography -->
+
+
   <!-- End Portfolio Section -->
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+  <div class="w3-padding-64 w3-content rounded-2 shadow-sm w3-text-grey mt-5 p-5 py-5 border" id="contact">
+    <h2 class="text-dark fw-bold">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
+    <!--<div class="w3-section">
   ``
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: oladaramola16@gmail.com</p>
-    </div><br>
+    </div><br>-->
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form action="mailto:oladaramola16@gmail.com" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -138,18 +250,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+    <a href="https://www.instagram.com/kitikitikirakita?igsh=YnIyMXBscXI5a2g2&utm_source=qr"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/@timi2280"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+    <a href="https://soundcloud.com/user-987666238"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+    <!--<a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>-->
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green fw-bolder" style="text-decoration: none;">w3.css</a></p>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
 
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
